@@ -9,9 +9,10 @@
     <div id="tify" style="height: 640px"></div>
     <script src="https://cdn.jsdelivr.net/npm/tify@0.33.0/dist/tify.js"></script>
     <script>
+        let manifestUrl = 'https://iiif.wellcomecollection.org/presentation/v2/b20417081_001'
         new Tify({
 	    container: '#tify',
-	    manifestUrl: 'https://manifests.sub.uni-goettingen.de/iiif/presentation/PPN623133725/manifest',
+	    manifestUrl: manifestUrl,
         });
     </script>
 </body>
