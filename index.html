@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My TIFY-Side</title>
+    <link href="https://unpkg.com/tify@latest/dist/tify.css" rel="stylesheet">
+</head>
+<body>
+    TIFY test
+    <div id="tify" style="height: 640px"></div>
+    <script src="https://unpkg.com/tify@latest"></script>
+    <script>
+        new Tify({
+	    container: '#tify',
+	    manifestUrl: 'https://manifests.sub.uni-goettingen.de/iiif/presentation/PPN623133725/manifest',
+        });
+    </script>
+</body>
+</html>
