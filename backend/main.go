@@ -20,5 +20,5 @@ func hello(c echo.Context) error {
 }
 
 func manifest(c echo.Context) error {
-	return c.File("manifest.json")
+	return c.File("manifest2.json")
 }
