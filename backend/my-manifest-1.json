@@ -1,0 +1,48 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "http://example.org/iiif/book1/manifest",
+  "type": "Manifest",
+  "label": {
+    "en": ["Example Book"]
+  },
+  "metadata": [
+    {
+      "label": { "en": ["Author"] },
+      "value": { "en": ["John Doe"] }
+    },
+    {
+      "label": { "en": ["Published"] },
+      "value": { "en": ["2023"] }
+    }
+  ],
+  "items": [
+    {
+      "id": "http://example.org/iiif/book1/canvas/p1",
+      "type": "Canvas",
+      "label": { "en": ["Page 1"] },
+      "width": 800,
+      "height": 1000,
+      "items": [
+        {
+          "id": "http://example.org/iiif/book1/page1/annotation",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://example.org/iiif/book1/page1/image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.wellcomecollection.org/image/b20417081_001_0016.jp2/full/634,1024/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 800,
+                "height": 1000
+              },
+              "target": "http://example.org/iiif/book1/canvas/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

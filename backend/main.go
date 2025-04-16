@@ -1,7 +1,10 @@
 package main
 
 import (
+	"fmt"
+	"log"
 	"net/http"
+	"os"
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
@@ -25,5 +28,12 @@ func hello(c echo.Context) error {
 }
 
 func manifest(c echo.Context) error {
-	return c.File("manifest2.json")
+	symlink := "the-used-manifest.json"
+	target, err := os.Readlink(symlink)
+	if err != nil {
+		log.Fatalf("Cannot read symbolic link: %s", err)
+	}
+	fmt.Println(target)
+	c.Response().Header().Set("Cache-Control", "no-cache, no-store, must-revalidate")
+	return c.File("the-used-manifest.json")
 }
