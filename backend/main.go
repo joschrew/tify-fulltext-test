@@ -32,16 +32,16 @@ func hello(c echo.Context) error {
 func annotation(c echo.Context) error {
 	path := c.Request().URL.Path
 	path = strings.TrimPrefix(path, "/")
-	return c.File(path)
+	return c.File(fmt.Sprintf("data/%s", path))
 }
 
 func manifest(c echo.Context) error {
-	symlink := "the-used-manifest.json"
+	symlink := "data/the-used-manifest.json"
 	target, err := os.Readlink(symlink)
 	if err != nil {
 		log.Fatalf("Cannot read symbolic link: %s", err)
 	}
 	fmt.Println(target)
 	c.Response().Header().Set("Cache-Control", "no-cache, no-store, must-revalidate")
-	return c.File("the-used-manifest.json")
+	return c.File(symlink)
 }
