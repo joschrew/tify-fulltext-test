@@ -12,21 +12,6 @@
   "label": {
     "en": ["The natural method of healing : a new and complete guide to health / by F.E. Bilz ; translated from the latest German edition."]
   },
-
-  "logo": {
-    "id": "https://iiif.wellcomecollection.org/logos/wellcome-collection-black.png",
-    "type": "Image"
-  },
-  "related": [
-    {
-      "id": "https://wellcomecollection.org/works/hcz4pz7m",
-      "type": "Text",
-      "format": "text/html",
-      "label": {
-        "en": ["The natural method of healing : a new and complete guide to health / by F.E. Bilz ; translated from the latest German edition."]
-      }
-    }
-  ],
   "items": [
     {
       "id": "https://iiif.wellcomecollection.org/presentation/v2/b20417081_001/sequences/s0",
@@ -42,23 +27,19 @@
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.wellcomecollection.org/image/b20417081_001_0016.jp2/full/634,1024/0/default.jpg",
+              "id": "https://iiif.wellcomecollection.org/image/b20417081_001_0016.jp2/full/317,512/0/default.jpg",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
                 "id": "https://iiif.wellcomecollection.org/image/b20417081_001_0016.jp2/full/634,1024/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1024,
-                "width": 634,
                 "service": [
                   {
                     "@context": "http://iiif.io/api/image/2/context.json",
                     "id": "https://iiif.wellcomecollection.org/image/b20417081_001_0016.jp2",
                     "profile": "http://iiif.io/api/image/2/level1.json",
-                    "protocol": "http://iiif.io/api/image",
-                    "width": 2180,
-                    "height": 3520
+                    "protocol": "http://iiif.io/api/image"
                   }
                 ]
               },

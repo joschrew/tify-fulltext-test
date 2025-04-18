@@ -1,0 +1,96 @@
+{
+	"@context": "http://iiif.io/api/presentation/2/context.json",
+	"@id": "http://31660d22-47ab-45a8-9e0a-4d40aeeb6f16",
+	"@type": "sc:Manifest",
+	"label": "another manifest test",
+	"metadata": [],
+	"description": [],
+	"sequences": [
+		{
+			"@id": "http://42e7cd7c-9883-4925-8d24-f0393b19157e",
+			"@type": "sc:Sequence",
+			"label": [
+				{
+					"@value": "Normal Sequence",
+					"@language": "en"
+				}
+			],
+			"canvases": [
+				{
+					"@id": "http://b58554cc-7a88-47c0-ac94-5f27c9be012a",
+					"@type": "sc:Canvas",
+					"label": "Empty canvas",
+					"height": 3372,
+					"width": 2411,
+					"images": [
+						{
+							"@context": "http://iiif.io/api/presentation/2/context.json",
+							"@id": "http://4b9901b0-5fad-4ffd-9e5d-6a467caf9240",
+							"@type": "oa:Annotation",
+							"motivation": "sc:painting",
+							"resource": {
+								"@id": "https://iiif.wellcomecollection.org/image/b18035723_0003.JP2/full/full/0/default.jpg",
+								"@type": "dctypes:Image",
+								"format": "image/jpeg",
+								"service": {
+									"@context": "http://iiif.io/api/image/2/context.json",
+									"@id": "https://iiif.wellcomecollection.org/image/b18035723_0003.JP2",
+									"profile": [
+										"http://iiif.io/api/image/2/level2.json",
+										{
+											"formats": [
+												"jpg",
+												"tif",
+												"gif",
+												"png"
+											],
+											"qualities": [
+												"bitonal",
+												"default",
+												"gray",
+												"color"
+											],
+											"supports": [
+												"regionByPx",
+												"sizeByW",
+												"sizeByWhListed",
+												"cors",
+												"regionSquare",
+												"sizeByDistortedWh",
+												"canonicalLinkHeader",
+												"sizeByConfinedWh",
+												"sizeByPct",
+												"jsonldMediaType",
+												"regionByPct",
+												"rotationArbitrary",
+												"sizeByH",
+												"baseUriRedirect",
+												"rotationBy90s",
+												"profileLinkHeader",
+												"sizeByForcedWh",
+												"sizeByWh",
+												"mirroring"
+											]
+										}
+									]
+								},
+								"height": 3372,
+								"width": 2411
+							},
+							"on": "http://b58554cc-7a88-47c0-ac94-5f27c9be012a"
+						}
+					],
+					"otherContent": [
+						{
+							"@id": "http://localhost:6701/annotations1.json",
+							"@type": "sc:AnnotationList",
+							"label": "My fantastic annotations"
+						}
+					],
+					"related": ""
+				}
+			]
+		}
+	],
+	"structures": []
+}

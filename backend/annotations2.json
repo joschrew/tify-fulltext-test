@@ -1,0 +1,31 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "type" : "AnnotationPage",
+  "id": "http://localhost:6701/annotations2.json",
+  "items": [
+    {
+      "id": "http://localhost:6701/dummy1",
+      "type": "Annotation",
+      "motivation" : [ "oa:commenting" ],
+      "body": {
+        "type": "TextualBody",
+        "language": "de",
+        "format": "text/plain",
+        "value": "das ist mein annotation-s-text"
+      },
+      "target": "https://example.org/vx1zueivsv-m9mlvfhc/canvas/aj9i8agyqyd-m9mlxlss#xywh=890,300,700,80"
+    },
+    {
+      "id": "http://localhost:6701/dummy2",
+      "type": "Annotation",
+      "motivation" : [ "oa:commenting" ],
+      "body": {
+        "type": "TextualBody",
+        "language": "de",
+        "format": "text/plain",
+        "value": "das ist mein anderer text"
+      },
+      "target": "https://example.org/vx1zueivsv-m9mlvfhc/canvas/aj9i8agyqyd-m9mlxlss#xywh=275,430,1950,115"
+    }
+  ]
+}
