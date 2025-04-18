@@ -5,6 +5,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"strings"
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
@@ -19,12 +20,19 @@ func main() {
 
 	e.GET("/", hello)
 	e.GET("/manifest", manifest)
+	e.GET("/annotations:*", annotation)
 
 	e.Start(":6701")
 }
 
 func hello(c echo.Context) error {
 	return c.String(http.StatusOK, "hello World")
+}
+
+func annotation(c echo.Context) error {
+	path := c.Request().URL.Path
+	path = strings.TrimPrefix(path, "/")
+	return c.File(path)
 }
 
 func manifest(c echo.Context) error {
