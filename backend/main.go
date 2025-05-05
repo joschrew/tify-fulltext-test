@@ -21,6 +21,7 @@ func main() {
 	e.GET("/", hello)
 	e.GET("/manifest", manifest)
 	e.GET("/annotations:*", annotation)
+	e.GET("/tify.*", tify)
 
 	e.Start(":6701")
 }
@@ -31,6 +32,14 @@ func hello(c echo.Context) error {
 
 func annotation(c echo.Context) error {
 	path := c.Request().URL.Path
+	path = strings.TrimPrefix(path, "/")
+	c.Response().Header().Set("Cache-Control", "no-cache, no-store, must-revalidate")
+	return c.File(fmt.Sprintf("data/%s", path))
+}
+
+func tify(c echo.Context) error {
+	path := c.Request().URL.Path
+	fmt.Println("GET", path)
 	path = strings.TrimPrefix(path, "/")
 	return c.File(fmt.Sprintf("data/%s", path))
 }
