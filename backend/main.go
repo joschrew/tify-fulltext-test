@@ -21,6 +21,7 @@ func main() {
 	e.GET("/", hello)
 	e.GET("/manifest", manifest)
 	e.GET("/annotations:*", annotation)
+	e.GET("/images/*", images)
 	e.GET("/tify.*", tify)
 
 	e.Start(":6701")
@@ -53,4 +54,10 @@ func manifest(c echo.Context) error {
 	fmt.Println(target)
 	c.Response().Header().Set("Cache-Control", "no-cache, no-store, must-revalidate")
 	return c.File(symlink)
+}
+
+func images(c echo.Context) error {
+	imageName := c.Param("*")
+	path := fmt.Sprintf("data/images/%s", imageName)
+	return c.File(path)
 }
