@@ -1,0 +1,98 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://iiif.wellcomecollection.org/presentation/v3/b20417081_001",
+  "type": "Manifest",
+  "label": { "en": ["The natural method of healing : a new and complete guide to health / by F.E. Bilz ; translated from the latest German edition."] },
+  "logo": [
+    {
+      "id": "https://iiif.wellcomecollection.org/logos/wellcome-collection-black.png",
+      "type": "Image",
+      "format": "image/png"
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://wellcomecollection.org/works/hcz4pz7m",
+      "type": "Text",
+      "format": "text/html",
+      "label": { "en": ["The natural method of healing : a new and complete guide to health / by F.E. Bilz ; translated from the latest German edition."] }
+    }
+  ],
+  "rendering": [
+    {
+      "id": "https://iiif.wellcomecollection.org/pdf/b20417081_001",
+      "type": "Text",
+      "format": "application/pdf",
+      "label": { "en": ["View as PDF"] }
+    },
+    {
+      "id": "https://api.wellcomecollection.org/text/v1/b20417081_001",
+      "type": "Text",
+      "format": "text/plain",
+      "label": { "en": ["View raw text"] }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://iiif.wellcomecollection.org/presentation/v3/b20417081_001/canvas/1",
+      "type": "Canvas",
+      "height": 3520,
+      "width": 2180,
+      "label": { "en": ["-"] },
+      "thumbnail": [
+        {
+          "id": "https://iiif.wellcomecollection.org/thumbs/b20417081_001_0016.jp2/full/62,100/0/default.jpg",
+          "type": "Image",
+          "format": "image/jpeg",
+          "service": [
+            {
+              "id": "https://iiif.wellcomecollection.org/thumbs/b20417081_001_0016.jp2",
+              "type": "ImageService2",
+              "profile": "http://iiif.io/api/image/2/level0.json"
+            }
+          ]
+        }
+      ],
+      "seeAlso": [
+        {
+          "id": "https://api.wellcomecollection.org/text/alto/b20417081_001/b20417081_001_0016.jp2",
+          "type": "Dataset",
+          "format": "text/xml",
+          "profile": "http://www.loc.gov/standards/alto/v3/alto.xsd",
+          "label": { "en": ["METS-ALTO XML"] }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://iiif.wellcomecollection.org/presentation/v3/b20417081_001/canvas/1/annotationpage/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.wellcomecollection.org/presentation/v3/b20417081_001/canvas/1/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.wellcomecollection.org/image/b20417081_001_0016.jp2/full/2180,3520/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 3520,
+                "width": 2180,
+                "service": [
+                  {
+                    "id": "https://iiif.wellcomecollection.org/image/b20417081_001_0016.jp2",
+                    "type": "ImageService2",
+                    "profile": "http://iiif.io/api/image/2/level1.json"
+                  }
+                ]
+              },
+              "target": "https://iiif.wellcomecollection.org/presentation/v3/b20417081_001/canvas/1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

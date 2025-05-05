@@ -8,11 +8,11 @@
       "motivation" : "sc:painting",
       "resource" : {
         "@type" : "cnt:ContentAsText",
-        "chars" : "OTTO ZIERER",
+        "chars" : "iiien mit 4, Söhn fortgepſlanset, Atutfangs",
         "format": "text/plain",
         "language": "de"
       },
-      "on": "http://b58554cc-7a88-47c0-ac94-5f27c9be012a#xywh=900,290,660,95"
+      "on": "http://b58554cc-7a88-47c0-ac94-5f27c9be012a#xywh=134,130,500,41"
     }
   ]
 }

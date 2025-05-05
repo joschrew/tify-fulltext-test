@@ -20,8 +20,8 @@
 					"@id": "http://b58554cc-7a88-47c0-ac94-5f27c9be012a",
 					"@type": "sc:Canvas",
 					"label": "Empty canvas",
-					"height": 3372,
-					"width": 2411,
+					"height": 1224,
+					"width": 800,
 					"images": [
 						{
 							"@context": "http://iiif.io/api/presentation/2/context.json",
@@ -29,18 +29,18 @@
 							"@type": "oa:Annotation",
 							"motivation": "sc:painting",
 							"resource": {
-								"@id": "https://iiif.wellcomecollection.org/image/b18035723_0003.JP2/full/full/0/default.jpg",
+								"@id": "http://141.5.99.53/images/21.T11998%2F0000-001D-99A9-6%26path%3Ddata%2FDEFAULT%2FFILE_0001_DEFAULT.jpg/full/full/0/default.jpg",
 								"@type": "dctypes:Image",
 								"format": "image/jpeg",
-								"height": 3372,
-								"width": 2411
+								"height": 1224,
+								"width": 800
 							},
 							"on": "http://b58554cc-7a88-47c0-ac94-5f27c9be012a"
 						}
 					],
 					"otherContent": [
 						{
-							"@id": "http://localhost:6701/annotations1.json",
+							"@id": "http://localhost:6701/annotations3.json",
 							"@type": "sc:AnnotationList",
 							"label": "My fantastic annotations"
 						}
